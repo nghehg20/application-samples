@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx-sample
 spec:
-  replicas: 6
+  replicas: 2
   selector:
     matchLabels:
       app: nginx-sample
@@ -19,7 +19,7 @@ spec:
         image: quay.io/nghehg/simple-webapp
         env:
         - name: APP_COLOR
-          value: "blue"
+          value: "red"
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
